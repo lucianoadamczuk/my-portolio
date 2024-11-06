@@ -20,11 +20,11 @@ const initI18next = async (lng: string, ns: string | string[]) => {
 };
 
 type $Tuple<T> = readonly [T?, ...T[]];
-type $FirstNamespace<Ns extends Namespace> = Ns extends readonly any[]
+type $FirstNamespace<Ns extends Namespace> = Ns extends readonly string[]
   ? Ns[0]
   : Ns;
 
-export async function useTranslation<
+export async function UseTranslation<
   Ns extends FlatNamespace | $Tuple<FlatNamespace>,
   KPrefix extends KeyPrefix<
     FallbackNs<

@@ -1,7 +1,7 @@
 import { Icon, Pill, TitleBox } from "@/components";
 import { Main } from "@/layouts";
 import "./PageProjectSlug.css";
-import { useTranslation } from "@/app/i18n/server";
+import { UseTranslation } from "@/app/i18n/server";
 import { redirect } from "next/navigation";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
   slug: string;
 }
 export default async function PageProjectSlug({ lang, slug }: Props) {
-  const { t } = await useTranslation(lang, "projects");
+  const { t } = await UseTranslation(lang, "projects");
   const projects = t("projects", { ns: "projects", returnObjects: true });
   const projectFound = projects.find((project) => project.slug === slug);
 

@@ -1,4 +1,4 @@
-import { useTranslation } from "@/app/i18n/server";
+import { UseTranslation } from "@/app/i18n/server";
 import { ProjectBox, TitleBox } from "@/components";
 import { Main, ScrollBox } from "@/layouts";
 
@@ -7,7 +7,7 @@ interface Props {
 }
 
 export default async function PageProjects({ lang }: Props) {
-  const { t } = await useTranslation(lang, ["pageProjects", "projects"]);
+  const { t } = await UseTranslation(lang, ["pageProjects", "projects"]);
   const pageName = t("pageName");
   const src = "/projects.jpg";
   const alt = t("alt");

@@ -1,4 +1,4 @@
-import { useTranslation } from "@/app/i18n/server";
+import { UseTranslation } from "@/app/i18n/server";
 import { ContactBox, TitleBox } from "@/components";
 import { PERSONAL_INFORMATION } from "@/constants/PERSONAL_INFORMATION";
 import { Main, ScrollBox } from "@/layouts";
@@ -7,7 +7,7 @@ interface Props {
   lang: string;
 }
 export default async function PageContact({ lang }: Props) {
-  const { t } = await useTranslation(lang, "pageContact");
+  const { t } = await UseTranslation(lang, "pageContact");
   const pageName = t("pageName");
   const src = "/contact.jpg";
   const alt = t("alt");

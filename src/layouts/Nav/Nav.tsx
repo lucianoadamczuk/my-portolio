@@ -1,7 +1,7 @@
 "use client";
 import "./Nav.css";
 import { useState } from "react";
-import { useTranslation } from "@/app/i18n/client";
+import { UseTranslation } from "@/app/i18n/client";
 import { useParams, useRouter } from "next/navigation";
 import { fallbackLng } from "@/app/i18n/settings";
 
@@ -42,7 +42,7 @@ export default function Nav() {
 
   const params = useParams<{ lang: string }>();
   const lang = params?.lang || fallbackLng;
-  const { t } = useTranslation(lang, "routes");
+  const { t } = UseTranslation(lang, "routes");
   const routes = t("routes", { ns: "routes", returnObjects: true });
 
   return (

@@ -37,7 +37,7 @@ i18next
     preload: runsOnServerSide ? languages : [],
   });
 
-export function useTranslation<
+export function UseTranslation<
   Ns extends FlatNamespace,
   KPrefix extends KeyPrefix<FallbackNs<Ns>> = undefined,
 >(
