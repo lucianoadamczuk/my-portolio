@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import { languages } from "../i18n/settings";
-import { useTranslation } from "../i18n/server";
+import { UseTranslation } from "../i18n/server";
 import { ReactNode } from "react";
 import { dir } from "i18next";
 import { IParams } from "@/types/IParams";
