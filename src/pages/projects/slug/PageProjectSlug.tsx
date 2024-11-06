@@ -4,6 +4,7 @@ import { Main } from "@/layouts";
 import "./PageProjectSlug.css";
 import { UseTranslation } from "@/app/i18n/client";
 import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 interface Props {
   lang: string;
@@ -16,9 +17,14 @@ export default function PageProjectSlug({ lang, slug }: Props) {
   const projectFound = projects.find((project) => project.slug === slug);
 
   const router = useRouter();
+  useEffect(() => {
+    if (!projectFound) {
+      router.push("/not-found");
+    }
+  }, [projectFound, router]);
+
   if (!projectFound) {
-    router.push("/not-found");
-    return null;
+    return null; // Prevent further rendering if project is not found
   }
 
   const { title, description, technologies, web, github } = projectFound;
