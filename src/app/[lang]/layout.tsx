@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Bebas_Neue, Montserrat } from "next/font/google";
 import { languages } from "../i18n/settings";
-import { useTranslation } from "../i18n/server";
+import { useTranslation as UseTranslation } from "../i18n/server";
 import { ReactNode } from "react";
 import { dir } from "i18next";
 import { IParams } from "@/types/IParams";
@@ -30,7 +30,7 @@ export async function generateMetadata({
   params: Promise<IParams>;
 }) {
   const { lang } = await params;
-  const { t } = await useTranslation(lang, "metadata");
+  const { t } = await UseTranslation(lang, "metadata");
 
   const title = t("title");
   const description = t("description");
