@@ -1,20 +1,23 @@
+"use client";
 import { Icon, Pill, TitleBox } from "@/components";
 import { Main } from "@/layouts";
 import "./PageProjectSlug.css";
-import { UseTranslation } from "@/app/i18n/server";
-import { redirect } from "next/navigation";
+import { UseTranslation } from "@/app/i18n/client";
+import { useRouter } from "next/navigation";
 
 interface Props {
   lang: string;
   slug: string;
 }
-export default async function PageProjectSlug({ lang, slug }: Props) {
-  const { t } = await UseTranslation(lang, "projects");
+
+export default function PageProjectSlug({ lang, slug }: Props) {
+  const { t } = UseTranslation(lang, "projects");
   const projects = t("projects", { ns: "projects", returnObjects: true });
   const projectFound = projects.find((project) => project.slug === slug);
 
+  const router = useRouter();
   if (!projectFound) {
-    redirect("/not-found");
+    return router.push("/not-found");
   }
 
   const { title, description, technologies, web, github } = projectFound;
