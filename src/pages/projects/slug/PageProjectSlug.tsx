@@ -17,7 +17,8 @@ export default function PageProjectSlug({ lang, slug }: Props) {
 
   const router = useRouter();
   if (!projectFound) {
-    return router.push("/not-found");
+    router.push("/not-found");
+    return null;
   }
 
   const { title, description, technologies, web, github } = projectFound;
