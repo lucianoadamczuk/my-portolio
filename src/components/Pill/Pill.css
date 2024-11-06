@@ -1,0 +1,11 @@
+.Pill {
+  border-radius: var(--rounded);
+  background-color: var(--colorPrimaryDark);
+  padding: 5px;
+  font-size: var(--fontSizeSM);
+}
+
+.Pill:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

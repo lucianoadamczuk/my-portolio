@@ -1,0 +1,12 @@
+.PillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: var(--spaceSM) 0;
+}
+
+.LinksContainer {
+  display: flex;
+  gap: var(--spaceSM);
+  margin-top: var(--spaceMD);
+}

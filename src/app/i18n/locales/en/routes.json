@@ -1,0 +1,8 @@
+{
+  "routes": [
+    { "name": "Home", "path": "/" },
+    { "name": "About Me", "path": "about-me" },
+    { "name": "Projects", "path": "projects" },
+    { "name": "Contact", "path": "contact" }
+  ]
+}

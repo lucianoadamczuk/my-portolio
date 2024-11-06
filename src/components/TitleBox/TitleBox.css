@@ -1,0 +1,29 @@
+.TitleBox {
+  text-align: center;
+  text-wrap: balance;
+
+  > .subtitle {
+    font-size: var(--fontSizeMD);
+    font-family: var(--fontFamilyTitle);
+    letter-spacing: 5px;
+  }
+  > .title {
+    color: var(--colorPrimary);
+    font-size: var(--fontSize2XL);
+    line-height: 90%;
+    font-family: var(--fontFamilyTitle);
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spaceSM);
+
+    > .reflectedText {
+      transform: scaleY(-1);
+      background: linear-gradient(to top, var(--colorGrayDark), transparent);
+      background-clip: text;
+      color: transparent;
+    }
+  }
+}

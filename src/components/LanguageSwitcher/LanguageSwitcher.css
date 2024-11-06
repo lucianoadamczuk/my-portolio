@@ -1,0 +1,21 @@
+.LanguageSwitcher {
+  display: flex;
+  position: absolute;
+  top: 0;
+  gap: 10px;
+  z-index: 2;
+  border-radius: 0 0 var(--rounded) 0;
+  background-color: white;
+  padding: 5px;
+  color: var(--colorDark);
+
+  > .link,
+  .langSelected {
+    font-size: var(--fontSizeMD);
+    text-transform: uppercase;
+  }
+
+  > .langSelected {
+    color: var(--colorPrimary);
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "pageName": "Sobre Mí",
+  "alt": "Una foto de mí leyendo",
+  "title": "Sobre Mí",
+  "subtitle": "Déjame presentarme",
+  "description": {
+    "title": "Descripción",
+    "paragraph": "Desarrollador frontend entusiasta con una pasión por crear experiencias web atractivas y fáciles de usar. Ansioso por unirme a un equipo colaborativo donde pueda aprender, crecer y tener un impacto significativo en los proyectos. Motivado para aportar ideas frescas y una fuerte ética de trabajo a cada desafío."
+  },
+  "philosophy": {
+    "title": "Filosofía",
+    "paragraph": "Como desarrollador frontend, creo experiencias web intuitivas, hermosas y eficientes. Me enfoco en combinar diseño y funcionalidad, asegurando accesibilidad para todos los usuarios. La colaboración y el aprendizaje constante me impulsan a seguir mejorando en un campo que siempre está evolucionando."
+  },
+  "beyondTheCode": {
+    "title": "Más allá del código",
+    "items": [
+      "Aprendiz curioso explorando novelas, teología y filosofía.",
+      "Bailarín con años de experiencia en movimiento y ritmo.",
+      "Entusiasta del gimnasio, amante de los deportes, siempre activo.",
+      "Músico de corazón: guitarra, percusión y algo de canto.",
+      "Comida favorita: ¡Pizza!",
+      "Me gustaría poder volar..."
+    ]
+  }
+}

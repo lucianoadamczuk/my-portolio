@@ -1,0 +1,8 @@
+{
+  "routes": [
+    { "name": "Inicio", "path": "/" },
+    { "name": "Sobre Mí", "path": "about-me" },
+    { "name": "Proyectos", "path": "projects" },
+    { "name": "Contacto", "path": "contact" }
+  ]
+}

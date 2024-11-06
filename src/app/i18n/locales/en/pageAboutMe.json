@@ -1,0 +1,25 @@
+{
+  "pageName": "About Me",
+  "alt": "A photo of me reading",
+  "title": "About Me",
+  "subtitle": "Let me introduce myself",
+  "description": {
+    "title": "Description",
+    "paragraph": "Enthusiastic frontend developer with a passion for creating engaging, user-friendly web experiences. Eager to join a collaborative team where I can learn, grow, and make a meaningful impact on projects. Motivated to bring fresh ideas and a strong work ethic to every challenge."
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "paragraph": "As a frontend developer, I create intuitive, beautiful, and efficient web experiences. I focus on blending design and functionality, ensuring accessibility for all users. Collaboration and constant learning drive me to keep improving in a field that’s always evolving."
+  },
+  "beyondTheCode": {
+    "title": "Beyond the code",
+    "items": [
+      "Curious learner exploring novels, theology and philosophy.",
+      "Dancer with years of experience in movement and rhythm.",
+      "Gym enthusiast, sports lover, constantly active.",
+      "Musician at heart—guitar, percussion, and some vocals.",
+      "Favorite food: Pizza!",
+      "I would like to be able to fly..."
+    ]
+  }
+}

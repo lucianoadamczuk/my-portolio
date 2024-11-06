@@ -1,0 +1,113 @@
+{
+  "projects": [
+    {
+      "slug": "haku",
+      "title": "Haku",
+      "description": "My personal digital marketing agency.",
+      "technologies": [
+        "Next JS",
+        "CSS modules",
+        "Typescript",
+        "i18n",
+        "Responsive Design",
+        "Reack Hook Form",
+        "UX UI",
+        "Adobe Ilustrator"
+      ],
+      "web": "https://hakumkt.netlify.app/es",
+      "github": "https://github.com/lucianoadamczuk/haku-mkt"
+    },
+    {
+      "slug": "haus-inmobiliary",
+      "title": "Haus Inmobiliary",
+      "description": "A real estate website showcasing properties with modern design and user-friendly interface.",
+      "technologies": [
+        "Tailwind CSS",
+        "Typescript",
+        "Framer Motion",
+        "Next JS",
+        "Responsive Design"
+      ],
+      "web": "https://haus-inmobiliary.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/haus-inmobiliary"
+    },
+    {
+      "slug": "church-i18n",
+      "title": "Church i18n",
+      "description": "A multilingual church website that supports internationalization for diverse communities.",
+      "technologies": ["React", "CSS", "UX UI", "Responsive Design"],
+      "web": "https://church-i18n.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/church-i18n"
+    },
+    {
+      "slug": "fuura-encode-university",
+      "title": "Futura Encode University",
+      "description": "A modern landing page design for a virtual university, featuring an intuitive layout and responsive elements to enhance user engagement and accessibility.",
+      "technologies": ["Tailwind CSS", "Typescript", "Next JS", "UX UI"],
+      "web": "https://futuraencode.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/futura-encode-university"
+    },
+    {
+      "slug": "bibiana-garcia",
+      "title": "Bibiana García",
+      "description": "A personal portfolio website for Bibiana Garcia, highlighting her work in design and development.",
+      "technologies": ["Tailwind CSS", "React", "UX UI"],
+      "web": "https://bibiana-garcia.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/bibiana-garcia"
+    },
+    {
+      "slug": "genaro-pedrazzoli",
+      "title": "Genaro Pedrazzoli",
+      "description": "A professional portfolio showcasing Genaro Pedrazzoli's projects and skills in web development.",
+      "technologies": ["Next JS", "CSS modules", "UX UI", "Responsive Design"],
+      "web": "https://genaro-pedrazzoli.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/genaro-pedrazzoli"
+    },
+    {
+      "slug": "netflix-replica",
+      "title": "Netflix Replica",
+      "description": "A Netflix replica application demonstrating a similar user experience and functionality.",
+      "technologies": [
+        "React",
+        "Typescript",
+        "Swiper",
+        "CSS modules",
+        "Responsive Design"
+      ],
+      "web": "https://net-fli-x-adamczuk.netlify.app/movies",
+      "github": "https://github.com/lucianoadamczuk/netflix-replica"
+    },
+    {
+      "slug": "go-to-egypt",
+      "title": "Go to Egypt",
+      "description": "A travel website dedicated to exploring Egypt's rich culture and attractions.",
+      "technologies": ["Framer Motion", "React", "CSS", "Adobe Photoshop"],
+      "web": "https://adamczuk-gotoegypt.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/go-to-egypt"
+    },
+    {
+      "slug": "duolingo-replica",
+      "title": "Duolingo Replica",
+      "description": "A language learning platform inspired by Duolingo, featuring interactive lessons and quizzes.",
+      "technologies": ["Bootstrap", "SCSS", "Swiper", "Responsive Design"],
+      "web": "https://lucianoadamczuk.github.io/duolingo-replica/",
+      "github": "https://github.com/lucianoadamczuk/duolingo-replica"
+    },
+    {
+      "slug": "ecommerce-gilgamesh",
+      "title": "Ecommerce Gilgamesh",
+      "description": "An e-commerce website built for a coding bootcamp, showcasing various products and a smooth shopping experience.",
+      "technologies": ["Tailwind CSS", "UX UI", "React"],
+      "web": "https://ecommerce-gigamesh.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/eCommerce"
+    },
+    {
+      "slug": "apple-replica",
+      "title": "Apple Replica",
+      "description": "A replica of the well-known Apple landing page. What do you think of how it looks?",
+      "technologies": ["React", "Tailwind CSS", "Responsive Design"],
+      "web": "https://adamczuk-apple-landing-clone.netlify.app/",
+      "github": "https://github.com/lucianoadamczuk/apple-landing-clone"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.ProjectBox {
+  border-radius: var(--rounded);
+  padding: var(--spaceSM);
+  width: 100%;
+
+  & > h6 {
+    color: var(--colorPrimary);
+    font-size: var(--fontSizeMD);
+  }
+
+  & > p {
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
+
+.ProjectBox:hover {
+  background-color: var(--colorPrimaryDark);
+}

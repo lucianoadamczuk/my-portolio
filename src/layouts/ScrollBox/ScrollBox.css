@@ -1,0 +1,29 @@
+.ScrollBox {
+  width: 100%;
+  height: 73vh;
+  overflow-y: scroll;
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 73vh;
+  }
+}
+
+.ScrollBox::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ScrollBox::-webkit-scrollbar-thumb {
+  cursor: grab;
+  border-radius: var(--rounded);
+  background-color: var(--colorPrimaryDark);
+  height: 10px;
+}
+
+.ScrollBox::-webkit-scrollbar-thumb:active {
+  background-color: var(--colorPrimary);
+}

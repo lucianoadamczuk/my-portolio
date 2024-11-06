@@ -1,0 +1,152 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  & > section {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  & > section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spaceSM);
+
+    > .pageName {
+      color: var(--colorPrimary);
+      font-size: clamp(10vh, 1vh, 20vh);
+      line-height: 90%;
+      font-family: var(--fontFamilyTitle);
+      white-space: nowrap;
+    }
+  }
+
+  & > section:last-child {
+    padding: var(--spaceSM) var(--spaceSM) var(--spaceMD) var(--spaceSM);
+
+    > .contentContainer {
+      border-radius: var(--rounded);
+      background-color: var(--colorDark);
+      height: 100%;
+
+      > .children {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+        border-radius: var(--rounded);
+        padding: var(--spaceMD) var(--spaceSM);
+        width: 100%;
+        height: 100%;
+      }
+
+      > .imageContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        & > img {
+          opacity: 0.1;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------- responseive ------------------------------ */
+
+@media (min-width: 720px) {
+  .Main {
+    & > section:last-child {
+      > .contentContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        > .children {
+          position: inherit;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------- animations ------------------------------- */
+.pageNameAnimation {
+  animation: pageNameAnimation 2s ease forwards;
+}
+
+@keyframes pageNameAnimation {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    letter-spacing: -20px;
+  }
+  40%,
+  70% {
+    opacity: 1;
+    filter: blur(0px);
+    letter-spacing: inherit;
+  }
+  100% {
+    opacity: 0;
+    filter: blur(10px);
+    letter-spacing: 20px;
+  }
+}
+
+.sectionAnimation {
+  animation: sectionAnimation 1s 2s forwards;
+}
+
+@keyframes sectionAnimation {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.section2Animation {
+  animation: section2Animation 1s 1.5s forwards;
+}
+
+@keyframes section2Animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 0;
+    filter: blur(20px);
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.imageAnimation {
+  animation: imageAnimation 5s linear 2s both;
+}
+
+@keyframes imageAnimation {
+  from {
+    scale: 1.2;
+  }
+  to {
+    scale: 1;
+  }
+}
