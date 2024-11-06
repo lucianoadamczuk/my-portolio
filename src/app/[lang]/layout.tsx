@@ -9,12 +9,14 @@ import { IParams } from "@/types/IParams";
 const fontTitle = Bebas_Neue({
   weight: "400",
   display: "swap",
+  subsets: ["latin"],
   variable: "--fontFamilyTitle",
 });
 
 const fontBase = Montserrat({
   weight: "300",
   display: "swap",
+  subsets: ["latin"],
   variable: "--fontFamilyBase",
 });
 
